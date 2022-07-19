@@ -12,7 +12,7 @@ pipeline {
         AWS_EB_ENVIRONMENT = "Javawebapp-env-1"
         
         SONAR_IP = "54.226.50.200"
-        SONAR_TOKEN = "sqp_79cc06aa77f8765e7f25f9c52be1605666334f72"
+        SONAR_TOKEN = "sqp_1a4fe5b0b61df2df590643e317d11a333abea141"
 
     }
 
@@ -45,7 +45,7 @@ pipeline {
             steps {
                                 sh '''
                 mvn clean verify sonar:sonar \
-                    -Dsonar.projectKey=Roba_Almehmadi \
+                    -Dsonar.projectKey=roba_almehmadi \
                     -Dsonar.host.url=http://$SONAR_IP \
                     -Dsonar.login=$SONAR_TOKEN
                 '''
