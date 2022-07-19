@@ -43,8 +43,8 @@ pipeline {
         
         stage('Quality Scan'){
             steps {
-                sh '''
-                    mvn clean verify sonar:sonar \
+                                sh '''
+                mvn clean verify sonar:sonar \
                     -Dsonar.projectKey=Roba_Almehmadi \
                     -Dsonar.host.url=http://$SONAR_IP \
                     -Dsonar.login=$SONAR_TOKEN
