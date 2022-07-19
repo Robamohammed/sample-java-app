@@ -62,6 +62,7 @@ pipeline {
             }
         }
 
+
      stage('publish artefacts to  S3 Bucket') {
             steps {
                 sh "aws configure set region us-east-1"
