@@ -49,8 +49,10 @@ pipeline {
                     -Dsonar.host.url=http://$SONAR_IP \
                     -Dsonar.login=$SONAR_TOKEN
                 '''
+            
             }
         }
+        
          stage('Package') {
             steps {
                 sh "mvn package"
