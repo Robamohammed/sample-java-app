@@ -9,10 +9,10 @@ pipeline {
         ARTIFACT_NAME = "hello-world.war"
         AWS_EB_APP_NAME = "java-webapp"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Javawebapp-env-1"
+        AWS_EB_ENVIRONMENT = "Samplejavaapp-env"
         
         SONAR_IP = "54.226.50.200"
-        SONAR_TOKEN = "sqp_1a4fe5b0b61df2df590643e317d11a333abea141"
+        SONAR_TOKEN = "sqp_8cb18e29690fe60032ecda565cf1dab4b16fd979"
 
     }
 
