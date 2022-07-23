@@ -45,7 +45,7 @@ pipeline {
             steps {
                                 sh '''
                 mvn clean verify sonar:sonar \
-                    -Dsonar.projectKey=roba_almehmadi \
+                    -Dsonar.projectKey=Roba-Almehmadi3 \
                     -Dsonar.host.url=http://$SONAR_IP \
                     -Dsonar.login=$SONAR_TOKEN
                 '''
