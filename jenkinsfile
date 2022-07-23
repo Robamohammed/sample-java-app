@@ -7,7 +7,7 @@ pipeline {
 
         AWS_S3_BUCKET = "artifact-bucket-repo-roba"
         ARTIFACT_NAME = "hello-world.war"
-        AWS_EB_APP_NAME = "java-webapp"
+        AWS_EB_APP_NAME = "sample-java-app"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
         AWS_EB_ENVIRONMENT = "Samplejavaapp-env"
         
